@@ -1,6 +1,7 @@
-# streaming-02-multiple-processes
+# Module 2: streaming-02-multiple-processes
+## Author: Prabha Sapkota Pokharel
+## Github link: https://github.com/prabhasapkota/streaming-02-multiple-processes
 
-> Multiple processes accessing a shared resource concurrently
 
 ## Overview
 
@@ -8,13 +9,6 @@ This example starts a shared database and multiple processes.
 
 The processes represent multiple users, or locations, or programs 
 hitting a shared database at the same time. 
-
-## Prerequisites
-
-1. Git
-1. Python 3.7+ (3.11+ preferred)
-1. VS Code Editor
-1. VS Code Extension: Python (by Microsoft)
 
 ## Task 1. Fork 
 
@@ -82,45 +76,35 @@ Use out3.txt to document the second run.
 
 
 -----
+## Task 8. Stream Processing Example
+* copy process_streaming_0.py from the Module 1 repo.
+* copy the other file you need to make it work. Hint: read the code. Look for the name of another (data) file to read from.
+
+## Task 9. Custom Stream from CSV Script
+* Create a new Python script in your repo named process_streaming_yourname.py
+* Create a new CSV file in your repo using any data you like.
+* Stream from your CSV file into a new file named out9.txt.
+* Use the examples provided as the basis for your implementation. 
+* Generate one record every 1-3 seconds. Let it run long enough to write ten or more records to out9.txt.
+
+## Task 10. Learn About UDP and TCP
+UDP
+* UDP stands for User Datagram Protocol, and it is connectionless -  you just send the data without establishing a formal connection. 
+* UDP is the easiest - just chunk up the data and send the chunks.
+* UDP is somewhat casual - like getting multiple packages shipped from the Amazon warehouse to your porch. 
+* UDP doesn’t guarantee delivery, order of the packets, or error checks.
+
+TCP
+* TCP (Transmission Control Protocol) is connection-oriented, ensuring data integrity, order, and delivery acknowledgment.
+* TCP is used for many of the primary internet functions, including web browsing and email.
+* TCP includes a more elaborate set of greeting protocols conducted before transmission begins - much like the bows, courtesies, and/or handshakes often followed when beginning important diplomatic conversations. 
+* To learn more about the TCP protocol, see the quiz this module and do a bit of searching.
+
 
 ## Helpful Information
 
 To get more help on the early tasks, see [streaming-01-getting-started](https://github.com/denisecase/streaming-01-getting-started).
 
-### Select All, Copy, Paste
-
-On Windows the select all, copy, paste hotkeys are:
-
-- CTRL a 
-- CTRL c 
-- CTRL v 
-
-On a Mac the select all, copy, paste hotkeys are:
-
-- Command a
-- Command c
-- Command v
-
-Detailed copy/paste instructions (as needed)
-
-1. To use these keys to transfer your output into a file, 
-clear the terminal, run the script, then click in the terminal to make it active.
-1. To select all terminal content, hold CTRL and the 'a' key together. 
-1. To copy the selected content, hold CTRL and the 'c' key together. 
-1. To paste, open the destination file (e.g. out0.py) for editing.
-1. Click somewhere in the destination file to make it the active window.
-1. Now hit CTRL a (both together) to select all of the destination file.
-1. Hit CTRL v (both together) to paste the content from your clipboard.
-
-Do a web search to find helpful videos on anything that seems confusing
-and share them in our discussion.
-
-### Reading Error Messages
-
-Python has pretty helpful error messages. 
-When you get an error, read them carefully. 
-
-- What error do you get?
 
 ### Database Is Locked Error
 
