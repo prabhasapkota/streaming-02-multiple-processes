@@ -37,6 +37,7 @@ HOST = "localhost"
 PORT = 9999
 ADDRESS_TUPLE = (HOST, PORT)
 INPUT_FILE_NAME = "batchfile_0_farenheit.csv"
+OUTPUT_FILE_NAME = "out9.txt"
 
 # Define program functions (bits of reusable code)
 
