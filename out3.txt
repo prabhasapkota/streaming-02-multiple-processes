@@ -1,7 +1,23 @@
-In the console, type clear and hit Enter or Return. 
+STARTING UP.............................
+  Date and Time:    2024-05-09 at 02:09 PM
+  Operating System: posix Darwin 23.2.0
+  Python Version:   3.11.4
+  Path to Interpreter:  /Library/Frameworks/Python.framework/Versions/3.11/bin/python3
+======================================================================
 
-This will clear the console output. 
-
-Run the file once while the tasks are longer. 
-
-Copy and paste the terminal results (when task_duration is 3) here.
+2024-05-09 14:09:03,426 - INFO - Called recreate_database().
+2024-05-09 14:09:03,426 - INFO - Called drop_table().
+2024-05-09 14:09:03,428 - INFO - Table 'pets' dropped successfully.
+2024-05-09 14:09:03,428 - INFO - Called create_table().
+2024-05-09 14:09:03,429 - INFO - Table 'pets' created successfully.
+2024-05-09 14:09:03,478 - INFO - Called process_two().
+2024-05-09 14:09:03,478 - INFO - Called process_one().
+2024-05-09 14:09:03,478 - INFO -   Called insert_pet() with process=P2, name=Cooper, breed=Rabbit.
+2024-05-09 14:09:03,478 - INFO -   Called insert_pet() with process=P1, name=Ace, breed=Dog.
+2024-05-09 14:09:03,478 - INFO - Called process_three().
+2024-05-09 14:09:03,478 - INFO -   Called insert_pet() with process=P3, name=Emma, breed=Rabbit.
+2024-05-09 14:09:06,485 - INFO -   Called insert_pet() with process=P2, name=Dingo, breed=Dog.
+2024-05-09 14:09:08,715 - ERROR - ERROR while P1 inserting pet Ace: database is locked
+2024-05-09 14:09:08,715 - INFO -   Called insert_pet() with process=P1, name=Buddy, breed=Dog.
+2024-05-09 14:09:08,725 - ERROR - ERROR while P3 inserting pet Emma: database is locked
+2024-05-09 14:09:08,725 - INFO -   Called insert_pet() with process=P3, name=Felix, breed=Cat.
